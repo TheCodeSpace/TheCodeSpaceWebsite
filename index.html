@@ -1,17 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-            <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-            <meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
         <title></title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="css/style.css" rel="stylesheet">
         <script src="api/loader.js"></script>
         <script src="js/onloadHandler.js"></script>
+        <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.blue-pink.min.css" />
+        <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> 
     </head>
     <body>
-        <div id="editor" style="width:800px;height:600px;border:1px solid grey"></div>
+        <nestingelement hidden id="nesting_element"></nestingelement>                   
         <integration id="img1" onload="integration('javascript', 'js1', 'img1').image('test.jpeg')"></integration>
+        <integration id="test" onload='integrations("javascript", "js_1", "test").codeRealtime.web("cr_1")'></integration>
     </body>
 </html>

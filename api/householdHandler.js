@@ -12,11 +12,11 @@ var m = {
     },
     
     load: function(location) {
-        console.info("Loaded " + location)
+        console.info("Loaded " + location);
     },
     
     init: function (clause) {
-        console.info("Initialized " + clause)
+        console.info("Initialized " + clause);
     }
 }    
 
