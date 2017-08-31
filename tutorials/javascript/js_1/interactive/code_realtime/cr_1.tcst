@@ -2,6 +2,7 @@ var interactive = {
     id: "1",
     defaults: {
         html: "<body>\
+        hello\
         </body>",
         css: ".body {\
             background: black;\

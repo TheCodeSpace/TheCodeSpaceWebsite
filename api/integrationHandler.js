@@ -16,17 +16,17 @@ function integrations(language, tutorialID, tagID) {
                         <tr style="height: 50%;">\
                             <td>\
                                 <p>HTML</p>\
-                                <div onkeyup="codeRealtime("' + interactive.id + '");" id="html_' + interactive.id + '" style="width:390px;height:290px;border:1px solid black"></div>\
+                                <div onkeyup="codeRealtime(' + interactive.id + ');" id="html_' + interactive.id + '" style="width:390px;height:290px;border:1px solid black"></div>\
                             </td>\
                             <td>\
                                 <p>CSS</p>\
-                                <div onkeyup="codeRealtime("' + interactive.id + '");" id="css_' + interactive.id + '" style="width:390px;height:290px;border:1px solid black"></div> \
+                                <div onkeyup="codeRealtime(' + interactive.id + ');" id="css_' + interactive.id + '" style="width:390px;height:290px;border:1px solid black"></div> \
                             </td>\
                         </tr>\
                         <tr style="height: 50%;">\
                             <td>\
                                 <p>JS</p>\
-                                <div onkeyup="codeRealtime("' + interactive.id + '");" id="js_' + interactive.id + '" style="width:390px;height:290px;border:1px solid black"></div> \
+                                <div onkeyup="codeRealtime(' + interactive.id + ');" id="js_' + interactive.id + '" style="width:390px;height:290px;border:1px solid black"></div> \
                             </td>\
                             <td>\
                                 <p>Result</p>\
@@ -72,14 +72,14 @@ function codeRealtime(interactiveID) {
                 var css = document.getElementById("var__css_" + interactiveID);
                 var js = document.getElementById("var__js_" + interactiveID);
                 var result = document.getElementById("result_" + interactiveID);
-                var iframe = result.innerHTML;
-                var style = iframe.createElement("style");
-                var script = iframe.createElement("script");
+                var iframe = result.contentDocument;
+                var style = document.createElement("style");
+                var script = document.createElement("script");
                 
-                iframe.innerHTML = monaco.editor.getModels()[html.innerHTML].getValue();
-                style.innerHTML = monaco.editor.getModels()[css.innerHTML].getValue();
-                script.innerHTML = monaco.editor.getModels()[js.innerHTML].getValue();
-                iframe.body.appendChild(style);
-    			iframe.body.appendChild(script);
+                result.contentDocument.getElementsByTagName("html")[0].innerHTML = monaco.editor.getModels()[html.innerHTML - 1].getValue();
+                style.innerHTML = monaco.editor.getModels()[css.innerHTML - 1].getValue();
+                script.innerHTML = monaco.editor.getModels()[js.innerHTML - 1].getValue();
+                iframe.head.appendChild(style);
+    			iframe.head.appendChild(script);
             
     }
