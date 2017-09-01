@@ -1,6 +1,6 @@
 var listing = {
-    amount: "1",
     listings: {
-        0: "javascript"
+        0: "javascript",
+        1: "html"
     }
 }

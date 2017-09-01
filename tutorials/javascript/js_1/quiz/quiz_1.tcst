@@ -1,0 +1,45 @@
+//Types: 0 > Multiple Choice, 1 > Dropdown Text, 2 > Code Completion
+
+
+var quiz = {
+    id: "1",
+    questions: {
+        0: {
+            type: "0",
+            statement: "How do you make paragraph tag in JS?",
+            questions: {
+                0: "<p text='Test123'>",
+                1: "<p text='Test123'></p>",
+                2: "<p>Test123",
+                3: "<p>Test123</p>"
+            },
+            answer: "3"
+        },
+        1: {
+            type: "1",
+            text: {
+                0: {
+                    text: "Googles phone OS is called "
+                },
+                1: {
+                    options: {
+                        0: "Nexus",
+                        1: "Android",
+                        2: "iOS",
+                        3: "Pixel"
+                    },
+                    answer: "1"
+                }
+            }
+        },
+        2: {
+            type: "2",
+            language: "javascript",
+            statement: "The code gave this error: Uncaught SyntaxError: Unexpected string",
+            default: "function printToConsole('text_to_print') {\n\
+    console.log(text_to_print)\n\
+}",
+            answer: "function printToConsole(text_to_print) {console.log(text_to_print)}"
+        }
+    }
+}
