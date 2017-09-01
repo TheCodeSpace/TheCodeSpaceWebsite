@@ -1,4 +1,5 @@
 var lesson_listings = {
+    pfLanguageName: "JavaScript",    
     amount: "1",
-    prefix: "js",
+    prefix: "js"
 }
