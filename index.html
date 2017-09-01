@@ -15,7 +15,10 @@
     </head>
     <body>
         <nestingelement hidden id="nesting_element"></nestingelement>
-        <button onclick='integrations("javascript", "js_1", "test").codeRealtime.web("cr_1")'>Load code</button>
+        
+        <button onclick='integrations("javascript", "js_1", "crtw1").codeRealtime.web("cr_1", true, false, false)'>Load code</button>
+        <button onclick='integrations("javascript", "js_1", "toc").toc()'>Load toc</button>
+        
         <button onclick='interactiveID = 1
                         var html = document.getElementById("var__html_" + interactiveID);
                         var css = document.getElementById("var__css_" + interactiveID);
@@ -29,8 +32,25 @@
                         style.innerHTML = monaco.editor.getModels()[css.innerHTML - 1].getValue();
                         script.innerHTML = monaco.editor.getModels()[js.innerHTML - 1].getValue();
                         iframe.head.appendChild(style);
-                        iframe.head.appendChild(script);'>Refresh</button>            
-        <integration id="img1" onload="integration('javascript', 'js1', 'img1').image('test.jpeg')"></integration>
-        <integration id="test"></integration>
+                        iframe.head.appendChild(script);'>Refresh</button>
+
+        <integration id="img1"></integration>
+
+        <integration id="crtw1"></integration>
+
+        <integration id="toc"></integration>
+
+        <tocm>stop 1</tocm>
+        <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br />
+        <tocm>stop 2</tocm>
+        <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br />
+        <tocm>stop 3</tocm>
+        <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br />
+        <tocm>stop 4</tocm>
+        <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br />
+        <tocm>stop 5</tocm>
+        <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br />
+        <tocm>stop 6</tocm>
+        <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br />
     </body>
 </html>
