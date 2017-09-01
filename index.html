@@ -16,41 +16,9 @@
     <body>
         <nestingelement hidden id="nesting_element"></nestingelement>
         
-        <button onclick='integrations("javascript", "js_1", "crtw1").codeRealtime.web("cr_1", true, false, false)'>Load code</button>
-        <button onclick='integrations("javascript", "js_1", "toc").toc()'>Load toc</button>
-        
-        <button onclick='interactiveID = 1
-                        var html = document.getElementById("var__html_" + interactiveID);
-                        var css = document.getElementById("var__css_" + interactiveID);
-                        var js = document.getElementById("var__js_" + interactiveID);
-                        var result = document.getElementById("result_" + interactiveID);
-                        var iframe = result.contentDocument;
-                        var style = document.createElement("style");
-                        var script = document.createElement("script");
-                        
-                        result.contentDocument.getElementsByTagName("html")[0].innerHTML = monaco.editor.getModels()[html.innerHTML - 1].getValue();
-                        style.innerHTML = monaco.editor.getModels()[css.innerHTML - 1].getValue();
-                        script.innerHTML = monaco.editor.getModels()[js.innerHTML - 1].getValue();
-                        iframe.head.appendChild(style);
-                        iframe.head.appendChild(script);'>Refresh</button>
+        <button onclick='tmh.load(0, 1)'>Load js tut 1</button>
 
-        <integration id="img1"></integration>
+        <tutorialholder></tutorialholder>
 
-        <integration id="crtw1"></integration>
-
-        <integration id="toc"></integration>
-
-        <tocm>stop 1</tocm>
-        <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br />
-        <tocm>stop 2</tocm>
-        <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br />
-        <tocm>stop 3</tocm>
-        <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br />
-        <tocm>stop 4</tocm>
-        <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br />
-        <tocm>stop 5</tocm>
-        <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br />
-        <tocm>stop 6</tocm>
-        <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br />
     </body>
 </html>

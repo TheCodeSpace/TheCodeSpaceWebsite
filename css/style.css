@@ -1,0 +1,11 @@
+.info { 
+    background: lime;
+}
+
+.tip {
+    background: lightgoldenrodyellow
+}
+
+.critical {
+    background: lightcoral;
+}

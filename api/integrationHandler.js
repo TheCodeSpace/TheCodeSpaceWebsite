@@ -1,6 +1,8 @@
 m.load("integrationHandler.js")
 
 function integrations(language, tutorialID, tagID) {
+    document.getElementById(tagID).outerHTML = "<integration id='" + tagID + "'></integration>"
+
     return {
         image: function(imageID) {
             document.getElementById(tagID).innerHTML = "<img src='tutorials/" + language + "/" + tutorialID + "/assets/" + imageID + "'>"
