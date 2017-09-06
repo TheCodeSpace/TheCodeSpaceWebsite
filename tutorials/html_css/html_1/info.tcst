@@ -1,0 +1,5 @@
+var info = {
+    language: "html_css",
+    tutorial_id: "html_1",
+    base_filedir: "base/base.tcst",
+}

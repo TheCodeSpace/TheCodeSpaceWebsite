@@ -1,0 +1,15 @@
+var interactive = {
+    id: "2",
+    defaults: {
+        html: "<body>\n\
+    hello\n\
+</body>",
+        css: "body {\n\
+    background: black;\n\
+    color: green;\n\
+}",
+        js: "window.onload = function() {\n\
+    alert('Funny!')\n\
+}"
+    }
+}

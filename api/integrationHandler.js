@@ -1,6 +1,7 @@
 m.load("integrationHandler.js")
 
 function integrations(language, tutorialID, tagID) {
+    console.log(tagID)
     document.getElementById(tagID).outerHTML = "<integration id='" + tagID + "'></integration>"
 
     return {

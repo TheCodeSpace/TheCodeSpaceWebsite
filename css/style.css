@@ -1,11 +1,31 @@
 .info { 
-    background: lime;
+    padding: 10px;
+    margin: 15px;
+    border-radius: 5px;
+    background: lightgray;
 }
 
 .tip {
-    background: lightgoldenrodyellow
+    padding: 10px;
+    margin: 15px;
+    border-radius: 5px;
+    background: lightgoldenrodyellow;
 }
 
 .critical {
+    padding: 10px;
+    margin: 15px;
+    border-radius: 5px;
     background: lightcoral;
+}
+
+.code {
+    font-family: "Courier New", Courier, monospace;
+    background: gray;
+    color: white;
+    padding-left: 5px;
+    padding-right: 5px;    
+    margin-left: 3px;
+    margin-right: 3px;
+    border-radius: 2px;
 }
