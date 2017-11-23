@@ -1,1 +1,3 @@
-var selection = document.createElement("div")
+var selectionDiv = document.createElement("div")
+
+

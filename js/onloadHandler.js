@@ -7,6 +7,7 @@ loadScriptRedirect("api/householdHandler.js", function() {
     loadScript("api/integrationHandler.js");
     loadScript("api/tutorialManagementHandler.js");
     loadScript("api/quizHandler.js");
+    loadScript("js/firebase.js");
     
     
 
