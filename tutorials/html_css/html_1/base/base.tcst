@@ -1,0 +1,3 @@
+var base = {
+    html_file_name: "base.html"
+}

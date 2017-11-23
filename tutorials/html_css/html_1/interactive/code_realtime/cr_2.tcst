@@ -1,0 +1,10 @@
+var interactive = {
+    id: "2",
+    defaults: {
+        html: "<!DOCTYPE html>\n\
+<html>\n\
+    <body>\n\
+    </body>\n\
+</html>"
+    }
+}
